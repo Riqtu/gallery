@@ -38,14 +38,20 @@ export const LogoWrapper = styled.section`
 `
 export const Links = styled.div`
   position: absolute;
-  width: 100%;
+  width: 70%;
+  left: 15%;
   height: 240px;
   top: auto;
+  /* background-color: blue; */
   bottom: 0;
+  display: flex;
 `
 export const LinkWrapper = styled.div`
   position: relative;
-  margin-left: 14%;
+  /* margin-left: 14%; */
+
+  flex-grow: 1;
+  text-align: center;
   margin-top: ${(props) => props.margin}px;
   opacity: 0;
   animation: topWave ${(props) => props.duration}s ${(props) => props.delay}s
@@ -70,6 +76,10 @@ export const StyledLink = styled(Link)`
   color: black;
   font-size: 35pt;
   text-decoration: none;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.7;
+  }
 `
 export const AboutWrapper = styled.section`
   position: relative;
@@ -106,15 +116,28 @@ export const PageBlock = styled.div`
   width: 100%;
   height: 350px;
   background-image: url(${(props) => props.back});
+  background-size: cover;
   background-color: #fff8f6;
   display: grid;
   align-content: center;
+  transition: 0.3s;
+  /* filter: saturate(0%); */
+  cursor: pointer;
   h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 60pt;
     margin-left: 40px;
+    width: 30%;
+    transition: 0.7s;
+  }
+
+  &:hover {
+    filter: drop-shadow(0px 0px 10px black);
+    h1 {
+      margin-left: 35%;
+    }
   }
 `
 

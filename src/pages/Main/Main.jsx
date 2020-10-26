@@ -33,7 +33,7 @@ const Main = (props) => {
         <Logo src={`${logo}?${Math.random()}`} alt=""></Logo>
         <Links>
           <LinkWrapper delay={3} duration={4} margin={40}>
-            <StyledLink to="?>>><lddsa/posters">Оригиналы</StyledLink>
+            <StyledLink to="/originals">Оригиналы</StyledLink>
           </LinkWrapper>
           <LinkWrapper delay={2} duration={3} margin={80}>
             <StyledLink to="/posters">Постеры</StyledLink>
@@ -67,15 +67,21 @@ const Main = (props) => {
         </Fade>
       </AboutWrapper>
       <Fade bottom cascade>
-        <PageBlock back={back1}>
-          <h1>Оригиналы</h1>
-        </PageBlock>
-        <PageBlock back={back2}>
-          <h1>Постеры</h1>
-        </PageBlock>
-        <PageBlock back={back3}>
-          <h1>Фотокниги</h1>
-        </PageBlock>
+        <StyledLink to="/originals">
+          <PageBlock back={back1}>
+            <h1>Оригиналы</h1>
+          </PageBlock>
+        </StyledLink>
+        <StyledLink to="/posters">
+          <PageBlock back={back2}>
+            <h1>Постеры</h1>
+          </PageBlock>
+        </StyledLink>
+        <StyledLink to="/originals">
+          <PageBlock back={back3}>
+            <h1>Фотокниги</h1>
+          </PageBlock>
+        </StyledLink>
       </Fade>
       <ContactsWrapper>
         <Fade bottom cascade>

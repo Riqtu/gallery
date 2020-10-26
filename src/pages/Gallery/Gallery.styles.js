@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { Link } from 'react-router-dom'
 
 import back from './../../assets/postersBack.jpg'
 
@@ -7,8 +8,10 @@ export const GalleryWrapper = styled.div`
   background: url(${back});
   background-size: 100%;
   height: 100vh;
+  min-height: 800px;
   background-repeat: no-repeat;
-  animation: anim 10s infinite alternate-reverse ease;
+  animation: flash 2s forwards ease, anim 10s infinite alternate-reverse ease;
+
   @keyframes anim {
     0% {
       background-position-y: -200px;
@@ -37,6 +40,23 @@ export const Header = styled.header`
     margin-left: 35px;
   }
 `
+export const StyledLink = styled(Link)`
+  position: absolute;
+  top: 80px;
+  right: 130px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20pt;
+  line-height: 0;
+  transition: 0.3s;
+  opacity: 0.2;
+  &:hover {
+    opacity: 1;
+  }
+`
 
 export const SliderWrapper = styled.div`
   position: relative;
@@ -53,6 +73,7 @@ export const SliderBlock = styled.div`
   position: relative;
   width: 100vw;
   height: 73vh;
+  min-height: 600px;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -64,7 +85,9 @@ export const SliderBlock = styled.div`
 `
 export const SliderImg = styled.img`
   width: ${(props) => (props.w ? props.w : 50)}%;
-  margin-left: ${(props) => (props.l ? props.l - 1 : 25)}%;
+  margin-left: ${(props) => (props.l ? props.l - 0.5 : 25)}%;
+  transition: 0.5s;
+  opacity: ${(props) => (props.active ? 0.2 : 1)};
   &:focus {
     outline: none;
   }
@@ -139,5 +162,58 @@ export const PrevArrow = styled.button`
   @media screen and (max-width: 700px) {
     left: 10%;
     top: 35%;
+  }
+`
+
+export const BuyButton = styled.div`
+  position: absolute;
+  top: 45%;
+  left: calc(50% - 100px);
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 40pt;
+  transition: 0.3s;
+  opacity: ${(props) => (props.active ? 0.8 : 0)};
+
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+`
+export const ModalWrapper = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 0.5s;
+  transform: translateY(${(props) => (props.active ? '0' : '-100%')});
+  z-index: 100;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+`
+export const Modal = styled.div`
+  width: 40vw;
+  height: 500px;
+  top: 0;
+  /* background-color: rgba(255, 255, 255, 1); */
+  transition: 0.7s;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+  background: url(${back});
+  background-size: 150%;
+  background-repeat: no-repeat;
+  animation: flash 2s forwards ease, anim 10s infinite alternate-reverse ease;
+  h1 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 40pt;
   }
 `

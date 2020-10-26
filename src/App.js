@@ -5,7 +5,8 @@ import './App.css'
 import { Main, Gallery } from './pages'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import { data } from './pages/Gallery/data'
+import { posters } from './data/posters'
+import { originals } from './data/originals'
 
 function App() {
   return (
@@ -16,10 +17,10 @@ function App() {
             <Main></Main>
           </Route>
           <Route path="/originals">
-            <Gallery data={data} title="Оригиналы"></Gallery>
+            <Gallery data={originals} title="Оригиналы"></Gallery>
           </Route>
           <Route path="/posters">
-            <Gallery data={data} title="Постеры"></Gallery>
+            <Gallery data={posters} title="Постеры"></Gallery>
           </Route>
         </Switch>
       </Router>
