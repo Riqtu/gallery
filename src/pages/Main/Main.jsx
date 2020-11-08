@@ -39,7 +39,7 @@ const Main = (props) => {
             <StyledLink to="/posters">Постеры</StyledLink>
           </LinkWrapper>
           <LinkWrapper delay={1} duration={5} margin={30}>
-            <StyledLink to="/posters">Фотокниги</StyledLink>
+            <StyledLink to="/photos">Фотокниги</StyledLink>
           </LinkWrapper>
         </Links>
       </LogoWrapper>
@@ -77,7 +77,7 @@ const Main = (props) => {
             <h1>Постеры</h1>
           </PageBlock>
         </StyledLink>
-        <StyledLink to="/originals">
+        <StyledLink to="/photos">
           <PageBlock back={back3}>
             <h1>Фотокниги</h1>
           </PageBlock>

@@ -35,6 +35,9 @@ export const LogoWrapper = styled.section`
   display: grid;
   align-content: center;
   justify-content: center;
+  @media screen and (max-width: 770px) {
+    margin-top: -50px;
+  }
 `
 export const Links = styled.div`
   position: absolute;
@@ -45,6 +48,11 @@ export const Links = styled.div`
   /* background-color: blue; */
   bottom: 0;
   display: flex;
+  @media screen and (max-width: 700px) {
+    width: 90%;
+    left: 5%;
+    bottom: 50px;
+  }
 `
 export const LinkWrapper = styled.div`
   position: relative;
@@ -80,6 +88,9 @@ export const StyledLink = styled(Link)`
   &:hover {
     opacity: 0.7;
   }
+  @media screen and (max-width: 700px) {
+    font-size: 18pt;
+  }
 `
 export const AboutWrapper = styled.section`
   position: relative;
@@ -91,6 +102,16 @@ export const AboutWrapper = styled.section`
     position: absolute;
     left: auto;
     right: 0%;
+    @media screen and (max-width: 770px) {
+      position: relative;
+      width: 80%;
+      left: 10%;
+      margin: 20px 0;
+    }
+  }
+  @media screen and (max-width: 770px) {
+    min-height: 100vh;
+    height: auto;
   }
 `
 export const AboutText = styled.div`
@@ -104,6 +125,10 @@ export const AboutText = styled.div`
   }
   p {
     font-family: 'Open Sans', sans-serif;
+  }
+  @media screen and (max-width: 770px) {
+    width: 90%;
+    left: 5%;
   }
 `
 export const Logo = styled.img`
@@ -123,6 +148,9 @@ export const PageBlock = styled.div`
   transition: 0.3s;
   /* filter: saturate(0%); */
   cursor: pointer;
+  @media screen and (max-width: 770px) {
+    height: 200px;
+  }
   h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -131,6 +159,9 @@ export const PageBlock = styled.div`
     margin-left: 40px;
     width: 30%;
     transition: 0.7s;
+    @media screen and (max-width: 770px) {
+      font-size: 25pt;
+    }
   }
 
   &:hover {
@@ -154,6 +185,9 @@ export const ContactsImg = styled.img`
   left: 0;
   top: auto;
   bottom: 0;
+  @media screen and (max-width: 770px) {
+    display: none;
+  }
 `
 
 export const ContactsBackImg = styled.img`
@@ -162,13 +196,21 @@ export const ContactsBackImg = styled.img`
   top: auto;
   bottom: -200px;
   left: 15%;
+  @media screen and (max-width: 770px) {
+    bottom: 0;
+    left: 10%;
+  }
 `
 export const ContactsText = styled.div`
   position: absolute;
   left: 15%;
   top: 80px;
   width: 80%;
-
+  @media screen and (max-width: 770px) {
+    left: 5%;
+    top: 20px;
+    width: 90%;
+  }
   h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -180,7 +222,7 @@ export const ContactsText = styled.div`
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 30pt;
+    font-size: 20pt;
   }
 `
 
@@ -195,4 +237,12 @@ export const ContactsTextAddres = styled.p`
   text-align: right;
   top: 170px;
   opacity: 0.4;
+  @media screen and (max-width: 770px) {
+    position: relative;
+    text-align: left;
+    top: 25px;
+    left: 0;
+    right: 0;
+    font-size: 20pt;
+  }
 `

@@ -12,6 +12,8 @@ import {
   BuyButton,
   ModalWrapper,
   Modal,
+  ContactsText,
+  ContactsTextAddres,
 } from './Gallery.styles'
 import Slider from 'react-slick'
 
@@ -95,6 +97,21 @@ const Gallery = (props) => {
       <ModalWrapper active={active} onClick={() => setActive(false)}>
         <Modal onClick={(e) => e.stopPropagation()}>
           <h1>Заказать</h1>
+          <ContactsText>
+            <p>
+              <a href="https://instagram.com/polinashustovaart">
+                {' '}
+                inst: @polinashustovaart{' '}
+              </a>{' '}
+              <br /> <a href="tel:+79185547940"> Tel: +79185547940</a>
+            </p>
+            <ContactsTextAddres>
+              Ростов на Дону <br />
+              Пр. Стачки 171 <br />
+              3 этаж <br />
+              Фотосалон О. Возлюбленной <br />
+            </ContactsTextAddres>
+          </ContactsText>
         </Modal>
       </ModalWrapper>
     </GalleryWrapper>

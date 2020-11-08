@@ -20,6 +20,11 @@ export const GalleryWrapper = styled.div`
       background-position-y: 0px;
     }
   }
+  @media screen and (max-width: 700px) {
+    background-size: 300%;
+    min-height: 660px;
+    height: auto;
+  }
 `
 
 export const Header = styled.header`
@@ -39,6 +44,18 @@ export const Header = styled.header`
     margin-top: 40px;
     margin-left: 35px;
   }
+  @media screen and (max-width: 1050px) {
+    padding: 40px 20px;
+
+    h1 {
+      font-size: 20pt;
+    }
+    img {
+      width: 50%;
+      margin-top: 10px;
+      margin-left: 15px;
+    }
+  }
 `
 export const StyledLink = styled(Link)`
   position: absolute;
@@ -56,6 +73,16 @@ export const StyledLink = styled(Link)`
   &:hover {
     opacity: 1;
   }
+
+  @media screen and (max-width: 1050px) {
+    left: 0;
+    right: 0;
+    width: calc(100% - 50px);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    top: 120px;
+  }
 `
 
 export const SliderWrapper = styled.div`
@@ -65,7 +92,8 @@ export const SliderWrapper = styled.div`
   margin-left: 0;
   margin-top: 60px;
   @media screen and (max-width: 700px) {
-    width: 80%;
+    width: 303%;
+    left: -125%;
   }
 `
 
@@ -80,7 +108,8 @@ export const SliderBlock = styled.div`
   margin-left: 25.5%;
   outline: none;
   @media screen and (max-width: 700px) {
-    height: 200px;
+    height: 50vh;
+    min-height: 300px;
   }
 `
 export const SliderImg = styled.img`
@@ -140,7 +169,7 @@ export const NextArrow = styled.button`
   @media screen and (max-width: 700px) {
     left: auto;
     right: 10%;
-    top: 35%;
+    top: 60%;
   }
 `
 export const PrevArrow = styled.button`
@@ -161,7 +190,7 @@ export const PrevArrow = styled.button`
   }
   @media screen and (max-width: 700px) {
     left: 10%;
-    top: 35%;
+    top: 60%;
   }
 `
 
@@ -215,5 +244,46 @@ export const Modal = styled.div`
     text-transform: uppercase;
     font-weight: 200;
     font-size: 40pt;
+  }
+  @media screen and (max-width: 700px) {
+    width: 90vw;
+    height: 400px;
+  }
+`
+
+export const ContactsText = styled.div`
+  /* position: absolute; */
+  /* left: 15%; */
+  top: 80px;
+  /* margin-left: 20px; */
+  /* width: 80%; */
+  p {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    font-size: 20pt;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    @media screen and (max-width: 700px) {
+      font-size: 15pt;
+    }
+  }
+`
+
+export const ContactsTextAddres = styled.p`
+  position: relative;
+  left: auto;
+  /* right: 40px; */
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20pt !important;
+  text-align: center;
+  opacity: 0.4;
+  @media screen and (max-width: 700px) {
+    font-size: 15pt !important;
   }
 `
