@@ -141,6 +141,9 @@ export const SliderTitle = styled.div`
     font-weight: normal;
     font-size: 35pt;
     text-transform: uppercase;
+    @media screen and (max-width: 700px) {
+      font-size: 25pt;
+    }
   }
   p {
     font-family: 'Oswald';
@@ -148,6 +151,10 @@ export const SliderTitle = styled.div`
     /* color: #828282; */
     font-size: 20pt;
     text-transform: uppercase;
+    @media screen and (max-width: 700px) {
+      font-size: 15pt;
+      margin-top: -25px;
+    }
   }
 `
 
@@ -169,7 +176,7 @@ export const NextArrow = styled.button`
   @media screen and (max-width: 700px) {
     left: auto;
     right: 10%;
-    top: 60%;
+    top: 53%;
   }
 `
 export const PrevArrow = styled.button`
@@ -190,7 +197,7 @@ export const PrevArrow = styled.button`
   }
   @media screen and (max-width: 700px) {
     left: 10%;
-    top: 60%;
+    top: 53%;
   }
 `
 

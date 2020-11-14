@@ -94,7 +94,7 @@ export const StyledLink = styled(Link)`
 `
 export const AboutWrapper = styled.section`
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   img {
     top: 0%;
@@ -109,6 +109,7 @@ export const AboutWrapper = styled.section`
       margin: 20px 0;
     }
   }
+  margin-bottom: 40px;
   @media screen and (max-width: 770px) {
     min-height: 100vh;
     height: auto;
@@ -116,8 +117,27 @@ export const AboutWrapper = styled.section`
 `
 export const AboutText = styled.div`
   position: relative;
-  left: 24%;
+  left: 25%;
   width: 30%;
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  p {
+    font-family: 'Open Sans', sans-serif;
+  }
+  @media screen and (max-width: 770px) {
+    width: 90%;
+    left: 5%;
+  }
+`
+export const AboutSecondText = styled.div`
+  position: relative;
+  left: 10%;
+  width: 45%;
+  margin-top: 50px;
+  margin-bottom: 100px;
   h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
