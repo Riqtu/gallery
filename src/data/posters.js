@@ -18,8 +18,71 @@ import p17 from './../assets/p17.jpg'
 import p18 from './../assets/p18.jpg'
 import p19 from './../assets/p19.jpg'
 import p20 from './../assets/p20.jpg'
-
+import p21 from './../assets/Вдох и выдох 40х40.jpg'
+import p22 from './../assets/Весна.jpg'
+import p23 from './../assets/Водоворот 47х42.jpg'
+import p24 from './../assets/Ирисы 42х52,5.jpg'
+import p25 from './../assets/Красные ирисы72х61.jpg'
+import p26 from './../assets/Лето 42х50.jpg'
+import p27 from './../assets/Осень.jpg'
+import p28 from './../assets/Риф 59х42.jpg'
 export const posters = [
+  {
+    src: p21,
+    title: 'Вдох и выдох',
+    description: 'Акварель, Бумага',
+    width: 50,
+    left: 25,
+  },
+  {
+    src: p22,
+    title: 'Весна',
+    description: 'Акварель, Бумага',
+    width: 65,
+    left: 17.5,
+  },
+  {
+    src: p23,
+    title: 'Водоворот',
+    description: 'Акварель, Бумага',
+    width: 40,
+    left: 30,
+  },
+  {
+    src: p24,
+    title: 'Ирисы',
+    description: 'Акварель, Бумага',
+    width: 65,
+    left: 17.5,
+  },
+  {
+    src: p25,
+    title: 'Красные ирисы',
+    description: 'Акварель, Бумага',
+    width: 40,
+    left: 30,
+  },
+  {
+    src: p26,
+    title: 'Лето',
+    description: 'Акварель, Бумага',
+    width: 65,
+    left: 17.5,
+  },
+  {
+    src: p27,
+    title: 'Осень',
+    description: 'Акварель, Бумага',
+    width: 65,
+    left: 17.5,
+  },
+  {
+    src: p28,
+    title: 'Риф',
+    description: 'Акварель, Бумага',
+    width: 65,
+    left: 17.5,
+  },
   {
     src: p1,
     title: 'маки',

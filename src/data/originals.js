@@ -16,8 +16,72 @@ import p15 from './../assets/orig/o15.jpg'
 import p16 from './../assets/orig/o16.jpg'
 import p17 from './../assets/orig/o17.jpg'
 import p18 from './../assets/orig/o18.jpg'
+import p19 from './../assets/orig/Вдох и выдох 40х40.jpg'
+import p20 from './../assets/orig/Весна 41,5х50.jpg'
+import p21 from './../assets/orig/Водоворот 47х42.jpg'
+import p22 from './../assets/orig/Ирисы 42х52,5.jpg'
+import p23 from './../assets/orig/Красные ирисы72х61.jpg'
+import p24 from './../assets/orig/Лето 42х50.jpg'
+import p25 from './../assets/orig/Осень (Времена года).jpg'
+import p26 from './../assets/orig/Риф 59х42.jpg'
 
 export const originals = [
+  {
+    src: p19,
+    title: 'Вдох и выдох',
+    description: 'Акварель, Бумага',
+    width: 50,
+    left: 25,
+  },
+  {
+    src: p20,
+    title: 'Весна',
+    description: 'Акварель, Бумага',
+    width: 65,
+    left: 17.5,
+  },
+  {
+    src: p21,
+    title: 'Водоворот',
+    description: 'Акварель, Бумага',
+    width: 40,
+    left: 30,
+  },
+  {
+    src: p22,
+    title: 'Ирисы',
+    description: 'Акварель, Бумага',
+    width: 65,
+    left: 17.5,
+  },
+  {
+    src: p23,
+    title: 'Красные ирисы',
+    description: 'Акварель, Бумага',
+    width: 40,
+    left: 30,
+  },
+  {
+    src: p24,
+    title: 'Лето',
+    description: 'Акварель, Бумага',
+    width: 65,
+    left: 17.5,
+  },
+  {
+    src: p25,
+    title: 'Осень',
+    description: 'Акварель, Бумага',
+    width: 65,
+    left: 17.5,
+  },
+  {
+    src: p26,
+    title: 'Риф',
+    description: 'Акварель, Бумага',
+    width: 65,
+    left: 17.5,
+  },
   {
     src: p1,
     title: 'Анатомия чувств',

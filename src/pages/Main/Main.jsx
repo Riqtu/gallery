@@ -124,7 +124,7 @@ const Main = (props) => {
           <ContactsText>
             <h1>Контакты</h1>
             <p>
-              inst: @Polinashustova.ru <br /> Tel: +79185547940
+              inst: @polinashustovaart <br /> Tel: +79185547940
             </p>
             <ContactsTextAddres>
               Ростов на Дону <br />
