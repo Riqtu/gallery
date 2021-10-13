@@ -100,9 +100,8 @@ const Gallery = (props) => {
           <ContactsText>
             <p>
               <a href="https://instagram.com/polinashustovaart">
-                {' '}
-                inst: @polinashustovaart{' '}
-              </a>{' '}
+                inst: @polinashustovaart
+              </a>
               <br /> <a href="tel:+79185547940"> Tel: +79185547940</a>
             </p>
             <ContactsTextAddres>

@@ -31,33 +31,37 @@ export const MainWrapper = styled.div`
 export const LogoWrapper = styled.section`
   position: relative;
   height: 100vh;
-  width: 100%;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
-  @media screen and (max-width: 770px) {
-    margin-top: -50px;
+  img {
+    width: 60%;
+    margin-left: 20%;
   }
 `
 export const Links = styled.div`
-  position: absolute;
-  width: 70%;
-  left: 15%;
-  height: 240px;
+  position: relative;
   top: auto;
   /* background-color: blue; */
   bottom: 0;
   display: flex;
-  @media screen and (max-width: 700px) {
+  gap: 30px;
+  /* @media screen and (max-width: 700px) {
     width: 90%;
     left: 5%;
     bottom: 50px;
-  }
+  } */
 `
 export const LinkWrapper = styled.div`
   position: relative;
   /* margin-left: 14%; */
-
+  &:nth-of-type(1) {
+    text-align: right;
+  }
+  &:nth-of-type(3) {
+    text-align: left;
+  }
   flex-grow: 1;
   text-align: center;
   margin-top: ${(props) => props.margin}px;
@@ -84,12 +88,13 @@ export const StyledLink = styled(Link)`
   color: black;
   font-size: 35pt;
   text-decoration: none;
+  width: fit-content;
   transition: 0.3s;
   &:hover {
     opacity: 0.7;
   }
   @media screen and (max-width: 700px) {
-    font-size: 18pt;
+    font-size: 15pt;
   }
 `
 export const AboutWrapper = styled.section`
@@ -163,9 +168,11 @@ export const PageBlock = styled.div`
   background-image: url(${(props) => props.back});
   background-size: cover;
   background-color: #fff8f6;
-  display: grid;
-  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: 0.3s;
+
   /* filter: saturate(0%); */
   cursor: pointer;
   @media screen and (max-width: 770px) {
@@ -177,7 +184,7 @@ export const PageBlock = styled.div`
     font-weight: 400;
     font-size: 60pt;
     margin-left: 40px;
-    width: 30%;
+    width: 100%;
     transition: 0.7s;
     @media screen and (max-width: 770px) {
       font-size: 25pt;
@@ -187,7 +194,7 @@ export const PageBlock = styled.div`
   &:hover {
     filter: drop-shadow(0px 0px 10px black);
     h1 {
-      margin-left: 35%;
+      width: 30%;
     }
   }
 `
