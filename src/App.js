@@ -18,7 +18,10 @@ function App() {
             <Main></Main>
           </Route>
           <Route path="/originals" exact>
-            <Composition name={'originals'} title="Оригиналы"></Composition>
+            <Composition
+              name={'originals'}
+              title="Живопись, графика"
+            ></Composition>
           </Route>
           <Route path="/:typeName/:id" exact>
             <ModalEl></ModalEl>

@@ -58,6 +58,10 @@ export const LinkWrapper = styled.div`
   /* margin-left: 14%; */
   &:nth-of-type(1) {
     text-align: right;
+    font-size: 2rem;
+    @media screen and (max-width: 700px) {
+      font-size: 15pt !important;
+    }
   }
   &:nth-of-type(3) {
     text-align: left;

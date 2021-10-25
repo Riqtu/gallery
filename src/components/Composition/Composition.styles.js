@@ -69,16 +69,21 @@ export const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  div {
+    display: flex;
+    align-items: center;
+  }
   h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 60pt;
+    font-size: 2rem;
     line-height: 0;
     float: left;
   }
   img {
-    margin-top: 40px;
+    width: 30%;
+    margin-top: 10px;
     margin-left: 35px;
   }
   @media screen and (max-width: 1050px) {
@@ -87,7 +92,8 @@ export const Header = styled.header`
       width: 50%;
     }
     h1 {
-      font-size: 2rem;
+      line-height: 1.3;
+      font-size: 1rem;
     }
     img {
       width: 85%;

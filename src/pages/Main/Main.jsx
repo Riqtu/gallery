@@ -34,7 +34,7 @@ const Main = (props) => {
         <Logo src={`${logo}?${Math.random()}`} alt=""></Logo>
         <Links>
           <LinkWrapper delay={3} duration={4} margin={40}>
-            <StyledLink to="/originals">Оригиналы</StyledLink>
+            <StyledLink to="/originals">Живопись, графика</StyledLink>
           </LinkWrapper>
           <LinkWrapper delay={2} duration={3} margin={80}>
             <StyledLink to="/posters">Постеры</StyledLink>
@@ -66,8 +66,8 @@ const Main = (props) => {
           <p>
             <Fade left text>
               Участвовала в выставках: «Нетрадиционная графика», «Молодые
-              художники юга России» и в нескольких выставках в Ростове на Дону,
-              Новочеркасске и по югу России. <br />
+              художники юга России» и в нескольких выставках в Ростове-на-Дону,
+              Москве, Санки-Петербурге, Новочеркасске и по югу России. <br />
               <br /> Участвовала в конкурсе «Автопортрет» в Ростовской области и
               получила «Специальный приз» организаторов. <br /> <br /> Я ищу
               гармонию в жизни и живописи. Мои работы — это эксперимент с
@@ -105,7 +105,7 @@ const Main = (props) => {
       <Fade bottom cascade>
         <StyledLink to="/originals">
           <PageBlock back={back1}>
-            <h1>Оригиналы</h1>
+            <h1>Живопись, графика</h1>
           </PageBlock>
         </StyledLink>
         <StyledLink to="/posters">
