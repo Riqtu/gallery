@@ -22,6 +22,7 @@ import polina from './../../assets/Polina.png'
 import back1 from './../../assets/back1.png'
 import back2 from './../../assets/back2.png'
 import back3 from './../../assets/back3.png'
+import back4 from './../../assets/back4.png'
 import contacts from './../../assets/contacts.svg'
 import contactsBack from './../../assets/backImg.png'
 
@@ -41,6 +42,11 @@ const Main = (props) => {
           </LinkWrapper>
           <LinkWrapper delay={1} duration={5} margin={30}>
             <StyledLink to="/photos">Фотокниги</StyledLink>
+          </LinkWrapper>
+          <LinkWrapper delay={4} duration={2} margin={20}>
+            <StyledLink to="/accessories">
+              Акварельные шелковые аксуссуары
+            </StyledLink>
           </LinkWrapper>
         </Links>
       </LogoWrapper>
@@ -86,6 +92,16 @@ const Main = (props) => {
               обрабатываются и собираются в макет книги, у каждой книги дизайн
               индивидуальный. Размер может быть 30х30, 25х25,20х20. Цена зависит
               от размера и количества разворотов.
+              <br />
+              В 2023 году создала бренд люксовых "акварельных"шелковых
+              аксессуаров "Полина Шустова". В коллекции несколько платков и
+              шарфов, созданных на основе моих акварельных работ. Для
+              изготовления Ваших платков используются только самый
+              высококачественный натуральный шелк от ведущих итальянских
+              производителей. Применяемые текстильные красители соответствуют
+              самым жестким стандартам безопасности и экологии, таким как Ecotex
+              100. Напечатанное изображение устойчиво к стирке, однако, для
+              сохранения структуры натурального шелка, рекомендуется химчистка.
               <br /> <br /> <br />
               Для оформления заказа <br /> Почта: <b>shustovabooks@yandex.ru</b>
               <br />
@@ -116,6 +132,11 @@ const Main = (props) => {
         <StyledLink to="/photos">
           <PageBlock back={back3}>
             <h1>Фотокниги</h1>
+          </PageBlock>
+        </StyledLink>
+        <StyledLink to="/accessories">
+          <PageBlock back={back4}>
+            <h1>Акварельные шелковые аксуссуары</h1>
           </PageBlock>
         </StyledLink>
       </Fade>

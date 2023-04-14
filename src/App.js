@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 // import { posters } from './data/posters'
 import { photos } from './data/photoBooks'
 import { Composition, ModalEl } from './components'
+import Accessories from './components/Accessories/Accessories'
 
 function App() {
   return (
@@ -28,6 +29,12 @@ function App() {
           </Route>
           <Route path="/posters">
             <Composition name={'posters'} title="Постеры"></Composition>
+          </Route>
+          <Route path="/accessories">
+            <Accessories
+              name={'accessories'}
+              title="Акварельные шелковые аксессуары"
+            ></Accessories>
           </Route>
           <Route path="/photos">
             <Gallery data={photos} title="Фотокниги"></Gallery>

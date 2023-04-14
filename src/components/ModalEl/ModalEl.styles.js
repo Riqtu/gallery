@@ -98,6 +98,9 @@ export const DescriptionWrapper = styled.section`
     &:nth-of-type(4) {
       font-size: 1rem;
     }
+    &:nth-of-type(5) {
+      font-size: 1rem;
+    }
     @media screen and (max-width: 800px) {
       font-size: 2rem;
     }

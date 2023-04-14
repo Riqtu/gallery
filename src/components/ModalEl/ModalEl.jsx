@@ -28,9 +28,6 @@ const ModalEl = (props) => {
   useEffect(() => {
     dataById && setImageData(dataById.fields.file.fields.file.details.image)
   }, [dataById])
-  // useEffect(() => {
-  //   setModalActive(props.active)
-  // }, [props.active])
   return (
     <ModalElWrapper active={true}>
       {dataById && (
@@ -46,14 +43,25 @@ const ModalEl = (props) => {
             <DescriptionWrapper>
               <span>Название</span>
               <text>{dataById.fields.title}</text>
-              <span>Материалы</span>
-              <text>{dataById.fields.description}</text>
+              {dataById.fields.description && (
+                <>
+                  <span>Материалы</span>
+                  <text>{dataById.fields.description}</text>{' '}
+                </>
+              )}
               <span>Размеры</span>
               <text>
                 {dataById.fields.size
                   ? dataById.fields.size
                   : 'Размеры не указаны'}
               </text>
+
+              {dataById.fields.price && (
+                <>
+                  <span>Цена</span>
+                  <text>{dataById.fields.price}</text>
+                </>
+              )}
               <span>Купить</span>
               <text>
                 <a href="https://instagram.com/polinashustovaart">

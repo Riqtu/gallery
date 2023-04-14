@@ -46,6 +46,7 @@ export const Links = styled.div`
   /* background-color: blue; */
   bottom: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   /* @media screen and (max-width: 700px) {
     width: 90%;
@@ -58,13 +59,17 @@ export const LinkWrapper = styled.div`
   /* margin-left: 14%; */
   &:nth-of-type(1) {
     text-align: right;
-    font-size: 2rem;
+    font-size: 1.5rem;
     @media screen and (max-width: 700px) {
       font-size: 15pt !important;
     }
   }
-  &:nth-of-type(3) {
+  &:nth-of-type(4) {
     text-align: left;
+    margin-left: 20px;
+    @media screen and (max-width: 700px) {
+      font-size: 15pt !important;
+    }
   }
   flex-grow: 1;
   text-align: center;
@@ -90,7 +95,7 @@ export const StyledLink = styled(Link)`
   text-transform: uppercase;
   font-weight: 400;
   color: black;
-  font-size: 35pt;
+  font-size: 30pt;
   text-decoration: none;
   width: fit-content;
   transition: 0.3s;
@@ -182,14 +187,20 @@ export const PageBlock = styled.div`
   @media screen and (max-width: 770px) {
     height: 200px;
   }
+  /* &:nth-of-type(4) {
+    h1 {
+      font-size: 30pt;
+    }
+  } */
   h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 60pt;
+    font-size: 40pt;
     margin-left: 40px;
     width: 100%;
     transition: 0.7s;
+
     @media screen and (max-width: 770px) {
       font-size: 25pt;
     }

@@ -36,8 +36,6 @@ const Composition = (props) => {
           data.postersData.map((el) => (
             <ImageBlock
               onClick={() => {
-                // setModalData(el)
-                // setModalActive(true)
                 handleOnClick(el.sys.id)
               }}
             >
